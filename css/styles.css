@@ -72,10 +72,14 @@ p {
 }
 
 .container {
-    display: flex;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.header-container {
+    display: flex;
+    gap: 40px;
 }
 
 /* .header-container {
@@ -149,13 +153,6 @@ p {
     gap: 40px;
 }
 
-.header-address-list:hover {
-    background-color: #404bbf;
-}
-.header-address-list:focus {
-    background-color: #404bbf;
-}
-
 .header-address-item {
     color: #434455;
     font-size: 16px;
@@ -164,9 +161,11 @@ p {
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 .header-address-item:hover {
     color: #404bbf;
 }
+
 .header-address-item:focus {
     color: #404bbf;
 }
@@ -177,6 +176,7 @@ p {
     background-color: #2e2f42;
     padding: 188px 0;
 }
+
 .hero-title {
     color: #fff;
     text-align: center;
@@ -187,6 +187,7 @@ p {
     letter-spacing: 0.02em;
     max-width: 496px;
 }
+
 .hero-btn {
     background-color: #4d5ae5;
     color: #fff;
@@ -206,20 +207,25 @@ p {
     color: #fff;
     cursor: pointer;
 }
+
 .hero-btn:hover {
     background-color: #404bbf;
 }
+
 .hero-btn:focus {
     background-color: #404bbf;
 }
+
 /* Section 2 */
 .what-we-do {
     padding: 120px 0;
 }
+
 .what-we-do-list {
     display: flex;
     gap: 24px;
 }
+
 .what-we-do-item {
     width: calc((100% - 72px) / 4);
 }
@@ -232,6 +238,7 @@ p {
     color: #2e2f42;
     margin-bottom: 8px;
 }
+
 .what-we-do-text {
     font-size: 16px;
     line-height: 1.5;
@@ -245,6 +252,7 @@ p {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 .our-team-title {
     font-size: 36px;
     line-height: 1.11;
@@ -254,10 +262,12 @@ p {
     color: #2e2f42;
     margin-bottom: 72px;
 }
+
 .our-team-list {
     display: flex;
     gap: 24px;
 }
+
 .our-team-item {
     background-color: #ffffff;
     width: calc((100% - 72px) / 4);
@@ -306,6 +316,7 @@ p {
     column-gap: 24px;
     row-gap: 48px;
 }
+
 .our-portfolio-item {
     width: calc((100% - 48px) / 3);
 }
@@ -336,6 +347,7 @@ p {
     padding: 100px 0;
     background-color: #2e2f42;
 }
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -347,9 +359,11 @@ p {
     text-transform: uppercase;
     color: #4d5ae5;
 }
+
 .footer-logo-span {
     color: #f4f4fd;
 }
+
 .footer-text {
     max-width: 264px;
     line-height: 1.5;
