@@ -17,7 +17,6 @@ a {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -38,34 +37,6 @@ img {
     display: block;
 }
 
-/* .title {
-    color: #2e2f42;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase; 
-} */
-
-/* Body */
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
-} */
-
-/* ul {
-    margin: 0;
-    padding-left: 0;
-} */
-
 .header {
     display: flex;
     border-bottom: 1px solid #e7e9fc;
@@ -79,17 +50,12 @@ p {
 
 .header-container {
     display: flex;
-    gap: 40px;
+    align-items: center;
 }
-
-/* .header-container {
-
-} */
 
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 40px;
     color: #2e2f42;
 
     font-size: 16px;
@@ -98,6 +64,7 @@ p {
     line-height: 24px;
     letter-spacing: 0.01em;
 }
+
 .header-logo {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -128,6 +95,7 @@ p {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    display: block;
 }
 
 .header-menu-item:hover {
@@ -140,6 +108,7 @@ p {
 
 .header-address {
     font-style: normal;
+    margin-left: auto;
 }
 
 .header-address-list {
@@ -186,6 +155,7 @@ p {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
+    margin: 0 auto 48px;
 }
 
 .hero-btn {
@@ -206,6 +176,7 @@ p {
     letter-spacing: 0.04em;
     color: #fff;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .hero-btn:hover {
