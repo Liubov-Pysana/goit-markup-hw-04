@@ -476,8 +476,10 @@ img {
 .footer-container {
     display: flex;
     align-items: baseline;
+}
+
+.logo-text {
     margin-right: 120px;
-    gap: 120px;
 }
 
 .footer-logo {
@@ -507,7 +509,12 @@ img {
 }
 
 .footer-social-media-text {
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
+    margin-bottom: 16px;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    font-weight: 500;
 }
 
 .footer-social-media-icons {
