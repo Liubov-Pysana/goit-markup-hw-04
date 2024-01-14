@@ -40,6 +40,8 @@ img {
 .header {
     display: flex;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -80,6 +82,9 @@ img {
     height: 24px;
     align-items: center;
     flex-shrink: 0;
+
+    position: relative;
+    color: #404bbf;
 }
 
 .header-menu-list {
@@ -104,6 +109,16 @@ img {
     color: #404bbf;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+}
+
+.header-menu-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .header-menu-item:active {
@@ -161,6 +176,7 @@ img {
     background-position: center;
     background-size: cover;
     padding: 188px 0;
+    max-width: 1440px;
 }
 
 .hero-title {
@@ -194,8 +210,10 @@ img {
     color: #fff;
     cursor: pointer;
     margin: 0 auto;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    /* transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms; */
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover {
@@ -229,6 +247,7 @@ img {
     border: 1px solid #8e8f99;
     background: #f4f4fd;
     margin-bottom: 8px;
+    height: 112px;
 }
 
 .what-we-do-item-icon {
@@ -283,6 +302,8 @@ img {
     background-color: #ffffff;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-item-container {
@@ -314,6 +335,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-list-icon-bckg {
@@ -325,11 +347,15 @@ img {
     height: 40px;
     flex-shrink: 0;
     border-radius: 50%;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    /* transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-list-icon-bckg:hover {
+    background-color: #404bbf;
+}
+.our-team-list-icon-bckg:focus {
     background-color: #404bbf;
 }
 
@@ -337,6 +363,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
 }
 
 .our-team-subtitle {
@@ -380,8 +409,7 @@ img {
 
 .our-portfolio-item {
     width: calc((100% - 48px) / 3);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-item:hover {
@@ -389,6 +417,30 @@ img {
     /* background: #fff; */
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.our-portfolio-item .item-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-portfolio-item:hover .item-image-container .image-paragraph {
+    transform: translateY(0%);
+}
+
+.item-image-container .image-paragraph {
+    color: #f4f4fd;
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    padding: 40px 32px;
 }
 
 .our-portfolio-item-container {
@@ -423,6 +475,8 @@ img {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
+    margin-right: 120px;
     gap: 120px;
 }
 
@@ -446,9 +500,10 @@ img {
     max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.footer-social-media {
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #ffffff;
+    line-height: 1.5;
 }
 
 .footer-social-media-text {
@@ -457,18 +512,10 @@ img {
 
 .footer-social-media-icons {
     display: flex;
-    column-gap: 16px;
+    gap: 16px;
 }
 
-.our-team-list-soc {
-}
-
-footer.our-team-list-icon-bckg {
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
-footer.our-team-list-icon-bckg:hover {
+.footer-social-media-icons .our-team-list-icon-bckg:hover,
+.footer-social-media-icons .our-team-list-icon-bckg:focus {
     background-color: #31d0aa;
-}
-.our-team-list-icon {
 }
